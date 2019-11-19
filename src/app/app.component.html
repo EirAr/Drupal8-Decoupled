@@ -1,0 +1,12 @@
+<div>I am {{title}}! Teehee!</div>
+<div *ngFor="let user of datum">{{user.uid}}</div>
+<div>LOGIN</div>
+
+<!-- <input type="text" (input)="inputClick($event)">
+<input #secondInput type="text" (input)="secondInputClick(secondInput.value)">
+<input #thirdInput type="text"> -->
+
+<input [(ngModel)]="username" type="text">
+<input [(ngModel)]="password" type="password">
+
+<button (click)="onSubmit()">Submit</button>
